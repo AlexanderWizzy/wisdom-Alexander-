@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container {
+    background: url('images/christmas\ background\ 5.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #41ca1f;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff5722;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+#decorations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.decor-item {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+}
+
+button#startButton {
+    margin-top: 20px;
+    background-color: #388e3c;
+}
+
+button#startButton:hover {
+    background-color: #2c6b2d;
+}
+.music-controls {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.music-controls button {
+    background-color: #ffcccc;
+    color: #333;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 15px;
+    border: 2px solid #ff6666;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.music-controls button:hover {
+    background-color: #ff9999;
+}

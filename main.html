@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Q&A Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Christmas Q&A Game</h1>
+        <div class="question-container">
+            <h2 id="question">Welcome to the game! Click Start to begin.</h2>
+            <div class="answers">
+                <button id="answer1" onclick="checkAnswer(1)"></button>
+                <button id="answer2" onclick="checkAnswer(2)"></button>
+                <button id="answer3" onclick="checkAnswer(3)"></button>
+                <button id="answer4" onclick="checkAnswer(4)"></button>
+            </div>
+        </div>
+        <div class="decorations-container">
+            <h3>Your Decorations</h3>
+            <div id="decorations"></div>
+        </div>
+        <button id="startButton" onclick="startGame()">Start Game</button>
+        
+        <!-- Christmas Background Music -->
+        <audio id="backgroundMusic" loop>
+            <source src="songs/We_Wish_You_A_Merry_Christmas.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <!-- Sound Effect for Correct Answer -->
+        <audio id="correctAnswerSound">
+            <source src="songs/The_Christmas_Song.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Sound Effect for Incorrect Answer -->
+        <audio id="incorrectAnswerSound">
+            <source src="insongs/Christmas_Songs_Oh_Holy_Night.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Music Control Button -->
+        <button onclick="toggleMusic()">Toggle Music</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
